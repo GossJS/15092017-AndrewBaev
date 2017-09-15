@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!ELEMENT myportfolio (site, mycompetition)>
+
+<!ELEMENT site (project) >
+<!ATTLIST site source CDATA #REQUIRED>
+
+<!ELEMENT project (achievement) >
+<!ATTLIST project name CDATA #REQUIRED>
+
+<!ELEMENT achievement EMPTY >
+<!ATTLIST achievement name CDATA #REQUIRED>
+
+
+<!ELEMENT mycompetition (skill) >
+<!ATTLIST mycompetition source CDATA #REQUIRED>
+<!ATTLIST mycompetition link CDATA #REQUIRED>
+
+<!ELEMENT skill EMPTY>
+<!ATTLIST skill in CDATA #REQUIRED>
+<!ATTLIST skill value CDATA #REQUIRED>
